@@ -1,0 +1,74 @@
+.box {
+  height: 400px;
+  width: 400px;
+  background: url("../images/city1.jpg") no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+.child {
+  float: left;
+  width: 50%;
+  height: 50%;
+  background-color: rgba(0, 0, 0, 0.412);
+  color: white;
+  text-align: center;
+  line-height: 200px;
+  position: relative;
+  transition: 1s;
+  font-size: 35px;
+}
+
+.child1 {
+  left: -50%;
+  top: -50%;
+}
+
+.box:hover .child1 {
+  left: 0;
+  top: 0;
+}
+
+.child2 {
+  top: -50%;
+  right: -50%;
+}
+
+.box:hover .child2 {
+  right: 0;
+  top: 0;
+}
+
+.child3 {
+  left: -50%;
+  bottom: -50%;
+}
+
+.box:hover .child3 {
+  left: 0;
+  bottom: 0;
+}
+
+.child4 {
+  right: -50%;
+  bottom: -50%;
+}
+
+.box:hover .child4 {
+  right: 0;
+  bottom: 0;
+}
+
+.child5 {
+  left: 25%;
+  bottom: 0;
+}
+
+.box:hover .child5 {
+  bottom: 75%;
+  background-color: red;
+}
